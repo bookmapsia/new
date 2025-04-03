@@ -3,6 +3,7 @@
 # ------------------------------------------------------------------------------
 # 0. Banner inicial com "Método MAM"
 # ------------------------------------------------------------------------------
+
 echo -e "\e[34m┌────────────────────────────────────────────────────────────────────────────┐\e[0m"
 echo -e "\e[34m│\e[37m                    __                                                     \e[34m│\e[0m"
 echo -e "\e[34m│\e[37m  ___     _____  __/ /_ ___________ _____  ______   _____                  \e[34m│\e[0m"
@@ -64,33 +65,15 @@ echo "=================================================="
 docker --version
 
 # ------------------------------------------------------------------------------
-# 5. Clona o repositório Dify dentro de /opt, com verificação de diretório existente
+# 5. Clona o repositório Dify dentro de /opt (caso não exista).
 # ------------------------------------------------------------------------------
 echo "=================================================="
-if [ -d "/opt/dify" ]; then
-  # Verifica se o diretório NÃO está vazio
-  if [ "$(ls -A /opt/dify)" ]; then
-    echo "fatal: destination path '/opt/dify' already exists and is not an empty directory."
-    read -p "Deseja remover a instalação anterior e prosseguir? (s/n): " RESP
-    if [[ "$RESP" == "s" || "$RESP" == "S" ]]; then
-      echo "Removendo diretório /opt/dify..."
-      sudo rm -rf /opt/dify
-      echo "Clonando repositório Dify em /opt/dify..."
-      sudo git clone https://github.com/langgenius/dify.git /opt/dify
-    else
-      echo "Instalação abortada pelo usuário."
-      exit 1
-    fi
-  else
-    # Diretório existe mas está vazio
-    echo "O diretório /opt/dify existe, mas está vazio. Clonando repositório..."
-    sudo git clone https://github.com/langgenius/dify.git /opt/dify
-  fi
-else
-  # Diretório não existe
-  echo "Clonando o repositório Dify em /opt/dify..."
+if [ ! -d "/opt/dify" ]; then
+  echo "Clonando o repositório Dify em /opt..."
   sudo mkdir -p /opt
   sudo git clone https://github.com/langgenius/dify.git /opt/dify
+else
+  echo "O diretório /opt/dify já existe. Pulando clonagem."
 fi
 
 # ------------------------------------------------------------------------------
@@ -132,6 +115,7 @@ docker ps
 # ------------------------------------------------------------------------------
 # 10. Mensagem final com ASCII artístico.
 # ------------------------------------------------------------------------------
+
 echo -e "\e[34m┌──────────────────────────────────────────────────────────────────────────────┐\e[0m"
 echo -e "\e[34m│\e[37m  _                             _              _        \e[34m                │\e[0m"
 echo -e "\e[34m│\e[37m | |                _          | |            | |       \e[34m                │\e[0m"
