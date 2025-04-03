@@ -1,23 +1,27 @@
 #!/bin/bash
 
 # ------------------------------------------------------------------------------
-# 0. Banner inicial com "Minha Automação Milionária"
+# 0. Banner inicial com "Método MAM"
 # ------------------------------------------------------------------------------
-echo -e "\e[32m                    __                                     \e[0m"
-echo -e "\e[32m  ___     _____  __/ /_ ___________ _____  ______   _____  \e[0m"
-echo -e "\e[32m | |\ \  / /| | | _____ |___   ___||  _  ||   _ \\ |  _  | \e[0m"
-echo -e "\e[32m | | \ \/ / | | | _____     | |    | |_| ||  |_| ||| |_| | \e[0m"
-echo -e "\e[32m |_|  \__/  |_| |______     |_|    |_____||_____// |_____| \e[0m"
-echo -e "\e[32m                                                           \e[0m"
-echo -e "\e[32m            ____    ____   ______  ____    ____            \e[0m"
-echo -e "\e[32m           | |\ \  / /| | |  __  || |\ \  / /| |           \e[0m"
-echo -e "\e[32m           | | \ \/ / | | | |__| || | \ \/ / | |           \e[0m"
-echo -e "\e[32m           |_|  \__/  |_| |_|  |_||_|  \__/  |_|           \e[0m"
-echo -e "\e[32m                                                           \e[0m"
-echo -e "\e[32m             Auto Instalador DOCKER/DIFY AI V1             \e[0m"
-echo -e "\e[32m                                                           \e[0m"
-echo -e "\e[32m               https://automilionaria.trade/               \e[0m"
+
+echo -e "\e[34m┌────────────────────────────────────────────────────────────────────────────┐\e[0m"
+echo -e "\e[34m│\e[37m                    __                                                     \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m  ___     _____  __/ /_ ___________ _____  ______   _____                  \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m | |\ \  / /| | | _____ |___   ___||  _  ||   _ \\ |  _  |                 \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m | | \ \/ / | | | _____     | |    | |_| ||  |_| ||| |_| |                 \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m |_|  \__/  |_| |______     |_|    |_____||_____// |_____|                 \e[34m│\e[0m"
+echo -e "\e[34m│                                                                            │\e[0m"
+echo -e "\e[34m│\e[37m            ____    ____   ______  ____    ____                            \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m           | |\ \  / /| | |  __  || |\ \  / /| |                            \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m           | | \ \/ / | | | |__| || | \ \/ / | |                            \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m           |_|  \__/  |_| |_|  |_||_|  \__/  |_|                            \e[34m│\e[0m"
+echo -e "\e[34m│                                                                            │\e[0m"
+echo -e "\e[34m│\e[37m             Auto Instalador DOCKER/DIFY AI V1                              \e[34m│\e[0m"
+echo -e "\e[34m│                                                                            │\e[0m"
+echo -e "\e[34m│\e[37m               https://automilionaria.trade/                                \e[34m│\e[0m"
+echo -e "\e[34m└────────────────────────────────────────────────────────────────────────────┘\e[0m"
 echo
+
 
 # ------------------------------------------------------------------------------
 # 1. Recebe o domínio WEB e o domínio API do usuário e confirma se estão corretos.
@@ -111,15 +115,23 @@ docker ps
 # ------------------------------------------------------------------------------
 # 10. Mensagem final com ASCII artístico.
 # ------------------------------------------------------------------------------
-echo -e "\e[32m _                             _              _        \e[0m"
-echo -e "\e[32m| |                _          | |            | |       \e[0m"
-echo -e "\e[32m| | ____    ___  _| |_  _____ | |  _____   __| |  ___  \e[0m"
-echo -e "\e[32m| ||  _ \  /___)(_   _)(____ || | (____ | / _  | / _ \ \e[0m"
-echo -e "\e[32m| || | | ||___ |  | |_ / ___ || | / ___ |( (_| || |_| |\e[0m"
-echo -e "\e[32m|_||_| |_|(___/    \__)\_____| \_)\_____| \____| \___/ \e[0m"
-echo -e "\e[32m                                                       \e[0m"
-echo "Instalação concluída!"
-echo "Agora você pode acessar o Dify em: https://$WEB_DOMAIN"
-echo "API está em: https://$API_DOMAIN"
-echo -e "\e[32m                                                       \e[0m"
-echo -e "\e[32mMétodo MAM: https://automilionaria.trade               \e[0m"
+
+echo -e "\e[34m┌──────────────────────────────────────────────────────────────────────────────┐\e[0m"
+echo -e "\e[34m│\e[37m  _                             _              _        \e[34m                │\e[0m"
+echo -e "\e[34m│\e[37m | |                _          | |            | |       \e[34m                │\e[0m"
+echo -e "\e[34m│\e[37m | | ____    ___  _| |_  _____ | |  _____   __| |  ___  \e[34m                │\e[0m"
+echo -e "\e[34m│\e[37m | ||  _ \  /___)(_   _)(____ || | (____ | / _  | / _ \ \e[34m                │\e[0m"
+echo -e "\e[34m│\e[37m | || | | ||___ |  | |_ / ___ || | / ___ |( (_| || |_| | \e[34m               │\e[0m"
+echo -e "\e[34m│\e[37m |_||_| |_|(___/    \__)\_____| \_)\_____| \____| \___/  \e[34m               │\e[0m"
+echo -e "\e[34m│\e[37m                                                                            \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m Instalação concluída!                                                      \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m Você pode agora acessar o Dify em:                                          \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m   https://\$WEB_DOMAIN                                                     \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m API disponível em:                                                          \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m   https://\$API_DOMAIN                                                     \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m                                                                            \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m Método MAM:                                                                 \e[34m│\e[0m"
+echo -e "\e[34m│\e[37m   https://automilionaria.trade                                              \e[34m│\e[0m"
+echo -e "\e[34m└──────────────────────────────────────────────────────────────────────────────┘\e[0m"
+echo
+
