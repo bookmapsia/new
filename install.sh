@@ -135,12 +135,12 @@ echo -e "\e[34m  | ||  _ \  /___)(_   _)(____ || | (____ | / _  | / _ \   \e[0m"
 echo -e "\e[34m  | || | | ||___ |  | |_ / ___ || | / ___ |( (_| || |_| |  \e[0m"
 echo -e "\e[34m  |_||_| |_|(___/    \__)\_____| \_)\_____| \____| \___/   \e[0m"
 echo
-echo -e "\e[34m                 Instalação concluída!                     \e[0m"
-echo -e "\e[34mVocê pode agora acessar o DifyAI em:                       \e[0m"
+echo -e "\e[37m                 Instalação concluída!                     \e[0m"
+echo -e "\e[37mVocê pode agora acessar o DifyAI em:                       \e[0m"
 echo -e "\e[32mhttps://$WEB_DOMAIN\e[0m"
-echo -e "\e[34mAPI disponível em:                                         \e[0m"
+echo -e "\e[37mAPI disponível em:                                         \e[0m"
 echo -e "\e[32mhttps://$API_DOMAIN\e[0m"
 echo
 echo -e "\e[34mMétodo MAM:                                                \e[0m"
-echo -e "\e[37mhttps://automilionaria.trade\e[0m"
+echo -e "\e[34mhttps://automilionaria.trade\e[0m"
 
