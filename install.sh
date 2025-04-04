@@ -13,27 +13,35 @@ echo -e "\e[34m             Auto Instalador DOCKER/DIFY AI V1                   
 echo -e "\e[34m                                                                            \e[0m"
 echo -e "\e[34m               https://automilionaria.trade                                 \e[0m"
 
-echo -e "\e[34m│\e[37m  _ _______     _  ______   __      __    _____      _      __         __  _____    \e[34m                │\e[0m"
-echo -e "\e[34m│\e[37m |  ______  \  | || |____|  \ \    / /   /     \    | |     \ \       / / / /  |    \e[34m                │\e[0m"
-echo -e "\e[34m│\e[37m | |       \ \ | || |____     \\  / /   /  / \  \   | |      \ \     / / /_/ | |    \e[34m                │\e[0m"
-echo -e "\e[34m│\e[37m | |       / / | ||  ____|      \/ /   /  / __\  \  | |       \ \   / /      | |    \e[34m                │\e[0m"
-echo -e "\e[34m│\e[37m | |______/ /  | || |        ___/ /   /  /     \  \ | |        \ \ / /       | |    \e[34m                │\e[0m"
-echo -e "\e[34m│\e[37m |_________/   |_||_|       |____/   /__/       \__\|_|         \___/        |_|     \e[34m               │\e[0m"
-echo -e "\e[34m│\e[37m             _                             _              _                          \e[34m               │\e[0m"
-echo -e "\e[34m│\e[37m            | |                _          | |            | |                         \e[34m               │\e[0m"
-echo -e "\e[34m│\e[37m            | | ____    ___  _| |_  _____ | |  _____   __| |  ___                    \e[34m               │\e[0m"
-echo -e "\e[34m│\e[37m            | ||  _ \  /___)(_   _)(____ || | (____ | / _  | / _ \                   \e[34m               │\e[0m"
-echo -e "\e[34m│\e[37m            | || | | ||___ |  | |_ / ___ || | / ___ |( (_| || |_| |                  \e[34m               │\e[0m"
-echo -e "\e[34m│\e[37m            |_||_| |_|(___/    \__)\_____| \_)\_____| \____| \___/                   \e[34m               │\e[0m"
-echo -e "\e[34m│\e[37m                                                                                     \e[34m│\e[0m"
-echo -e "\e[34m│\e[37m Instalação concluída!                                                               \e[34m│\e[0m"
-echo -e "\e[34m│\e[37m Você pode agora acessar o Dify em:                                                  \e[34m│\e[0m"
-echo -e "\e[34m│   \e[32mhttps://$WEB_DOMAIN\e[34m                                                                │\e[0m"
-echo -e "\e[34m│\e[37m API disponível em:                                                                   \e[34m│\e[0m"
-echo -e "\e[34m│   \e[32mhttps://$API_DOMAIN\e[34m                                                                │\e[0m"
-echo -e "\e[34m│\e[37m                                                                                      \e[34m│\e[0m"
-echo -e "\e[34m│\e[37m Método MAM:                                                                          \e[34m│\e[0m"
-echo -e "\e[34m│   \e[37mhttps://automilionaria.trade\e[34m                                                       │\e[0m"
+#!/bin/bash
+
+# ------------------------------------------------------------------------------
+# Mensagem final com ASCII artístico (sem moldura, azul e alinhado)
+# ------------------------------------------------------------------------------
+
+echo -e "\e[34m _ _______     _  ______   __      __    _____      _      __         __  _____           \e[0m"
+echo -e "\e[34m |  ______  \  | || |____|  \ \    / /   /     \    | |     \ \       / / / /  |            \e[0m"
+echo -e "\e[34m | |       \ \ | || |____     \\  / /   /  / \  \   | |      \ \     / / /_/ | |            \e[0m"
+echo -e "\e[34m | |       / / | ||  ____|      \/ /   /  / __\  \  | |       \ \   / /      | |            \e[0m"
+echo -e "\e[34m | |______/ /  | || |        ___/ /   /  /     \  \ | |        \ \ / /       | |            \e[0m"
+echo -e "\e[34m |_________/   |_||_|       |____/   /__/       \__\|_|         \___/        |_|            \e[0m"
+echo
+echo -e "\e[34m               _                             _              _                                 \e[0m"
+echo -e "\e[34m              | |                _          | |            | |                                \e[0m"
+echo -e "\e[34m              | | ____    ___  _| |_  _____ | |  _____   __| |  ___                           \e[0m"
+echo -e "\e[34m              | ||  _ \  /___)(_   _)(____ || | (____ | / _  | / _ \                          \e[0m"
+echo -e "\e[34m              | || | | ||___ |  | |_ / ___ || | / ___ |( (_| || |_| |                         \e[0m"
+echo -e "\e[34m              |_||_| |_|(___/    \__)\_____| \_)\_____| \____| \___/                          \e[0m"
+echo
+echo -e "\e[34m                              Instalação concluída!                                                     \e[0m"
+echo -e "\e[34m                        Você pode agora acessar o Dify em:                                       \e[0m"
+echo -e "                           \e[32mhttps://$WEB_DOMAIN\e[0m"
+echo -e "\e[34m                           API disponível em:                                                       \e[0m"
+echo -e "                           \e[32mhttps://$API_DOMAIN\e[0m"
+echo
+echo -e "\e[34m                                 Método MAM:                                                               \e[0m"
+echo -e "                           \e[37mhttps://automilionaria.trade\e[0m"
+
 
 # ------------------------------------------------------------------------------
 # 1. Garante que git e curl estejam instalados
