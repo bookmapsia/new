@@ -9,7 +9,7 @@ echo -e "\e[34m           | |\ \  / /| | |  __  || |\ \  / /| |                 
 echo -e "\e[34m           | | \ \/ / | | | |__| || | \ \/ / | |                            \e[0m"
 echo -e "\e[34m           |_|  \__/  |_| |_|  |_||_|  \__/  |_|                            \e[0m"
 echo -e "\e[34m                                                                            \e[0m"
-echo -e "\e[34m             Auto Instalador DOCKER/DIFY AI V1                              \e[0m"
+echo -e "\e[34m             Auto Instalador DOCKER/DifyAI V1                               \e[0m"
 echo -e "\e[34m                                                                            \e[0m"
 echo -e "\e[34m               https://automilionaria.trade                                 \e[0m"
 
@@ -136,7 +136,7 @@ echo -e "\e[34m    | || | | ||___ |  | |_ / ___ || | / ___ |( (_| || |_| |      
 echo -e "\e[34m    |_||_| |_|(___/    \__)\_____| \_)\_____| \____| \___/                          \e[0m"
 echo
 echo -e "\e[34m                    Instalação concluída!                                                     \e[0m"
-echo -e "\e[34m              Você pode agora acessar o Dify em:                                       \e[0m"
+echo -e "\e[34m              Você pode agora acessar o DifyAI em:                                       \e[0m"
 echo -e "\e[32mhttps://$WEB_DOMAIN\e[0m"
 echo -e "\e[34mAPI disponível em:                                                       \e[0m"
 echo -e "\e[32mhttps://$API_DOMAIN\e[0m"
