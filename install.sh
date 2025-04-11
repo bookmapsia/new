@@ -4,6 +4,12 @@
 # 0. Banner inicial com "MAM"
 # ------------------------------------------------------------------------------
 
+WHITE="\e[97m"
+GREEN="\e[32m"
+YELLOW="\e[33m"
+BLUE="\e[34m"
+RESET="\e[0m"
+
 echo -e "${WHITE}                     __       __ ______ __    __ __    __  ______                      ${RESET}"
 echo -e "${WHITE}                    |  \     /  \      \  \  |  \  \  |  \/      \                     ${RESET}"
 echo -e "${WHITE}                    | ▓▓\   /  ▓▓\▓▓▓▓▓▓ ▓▓\ | ▓▓ ▓▓  | ▓▓  ▓▓▓▓▓▓\                    ${RESET}"
@@ -13,35 +19,12 @@ echo -e "${WHITE}                    | ▓▓\▓▓ ▓▓ ▓▓ | ▓▓ | �
 echo -e "${WHITE}                    | ▓▓ \▓▓▓| ▓▓_| ▓▓_| ▓▓ \▓▓▓▓ ▓▓  | ▓▓ ▓▓  | ▓▓                    ${RESET}"
 echo -e "${WHITE}                    | ▓▓  \▓ | ▓▓   ▓▓ \ ▓▓  \▓▓▓ ▓▓  | ▓▓ ▓▓  | ▓▓                    ${RESET}"
 echo -e "${WHITE}                     \▓▓      \▓▓\▓▓▓▓▓▓\▓▓   \▓▓\▓▓   \▓▓\▓▓   \▓▓    ___             ${RESET}"
-echo -e "${WHITE}    ______  __    __ ________  ______  __       __  ______   ______   _---_   ______   ${RESET}"
-echo -e "${WHITE}  /      \|  \  |  \        \/      \|  \     /  \/      \ /      \ /      \ /      \  ${RESET}"
-echo -e "${WHITE} |  ▓▓▓▓▓▓\ ▓▓  | ▓▓\▓▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓\   /  ▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\ ${RESET}"
-echo -e "${WHITE} | ▓▓__| ▓▓ ▓▓  | ▓▓  | ▓▓  | ▓▓  | ▓▓ ▓▓▓\ /  ▓▓▓ ▓▓__| ▓▓ ▓▓   \▓▓ ▓▓__| ▓▓ ▓▓  | ▓▓ ${RESET}"
-echo -e "${WHITE} | ▓▓    ▓▓ ▓▓  | ▓▓  | ▓▓  | ▓▓  | ▓▓ ▓▓▓▓\  ▓▓▓▓ ▓▓    ▓▓ ▓▓     | ▓▓    ▓▓ ▓▓  | ▓▓ ${RESET}"
-echo -e "${WHITE} | ▓▓▓▓▓▓▓▓ ▓▓  | ▓▓  | ▓▓  | ▓▓  | ▓▓ ▓▓\▓▓ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓ ▓▓   __| ▓▓▓▓▓▓▓▓ ▓▓  | ▓▓ ${RESET}"
-echo -e "${WHITE} | ▓▓  | ▓▓ ▓▓__/ ▓▓  | ▓▓  | ▓▓__/ ▓▓ ▓▓ \▓▓▓| ▓▓ ▓▓  | ▓▓ ▓▓__/  \ ▓▓  | ▓▓ ▓▓__/ ▓▓ ${RESET}"
-echo -e "${WHITE} | ▓▓  | ▓▓\▓▓    ▓▓  | ▓▓   \▓▓    ▓▓ ▓▓  \▓ | ▓▓ ▓▓  | ▓▓\▓▓    ▓▓ ▓▓  | ▓▓\▓▓    ▓▓ ${RESET}"
-echo -e "${WHITE}  \▓▓   \▓▓ \▓▓▓▓▓▓    \▓▓    \▓▓▓▓▓▓ \▓▓      \▓▓\▓▓   \▓▓ \▓▓▓▓▓▓ \▓▓   \▓▓ \▓▓▓▓▓▓  ${RESET}"
-echo -e "${WHITE}        __       __ __ __ __                                  //  ______  ______       ${RESET}"
-echo -e "${WHITE}       |  \     /  \  \  \  \                       _            |      \/      \      ${RESET}"
-echo -e "${WHITE}       | ▓▓\   /  ▓▓\▓▓ ▓▓\▓▓ ______  _______   __/ /_   ______  \▓▓▓▓▓▓  ▓▓▓▓▓▓\      ${RESET}"
-echo -e "${WHITE}       | ▓▓▓\ /  ▓▓▓  \ ▓▓  \/      \|       \ |      \ /      \  | ▓▓ | ▓▓__| ▓▓      ${RESET}"
-echo -e "${WHITE}       | ▓▓▓▓\  ▓▓▓▓ ▓▓ ▓▓ ▓▓  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\ \▓▓▓▓▓▓\  ▓▓▓▓▓▓\ | ▓▓ | ▓▓    ▓▓      ${RESET}"
-echo -e "${WHITE}       | ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓ ▓▓ ▓▓  | ▓▓ ▓▓  | ▓▓/      ▓▓ ▓▓   \▓▓ | ▓▓ | ▓▓▓▓▓▓▓▓      ${RESET}"
-echo -e "${WHITE}       | ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓ ▓▓ ▓▓__/ ▓▓ ▓▓  | ▓▓  ▓▓▓▓▓▓▓ ▓▓      _| ▓▓_| ▓▓  | ▓▓      ${RESET}"
-echo -e "${WHITE}       | ▓▓  \▓ | ▓▓ ▓▓ ▓▓ ▓▓\▓▓    ▓▓ ▓▓  | ▓▓\▓▓    ▓▓ ▓▓     |   ▓▓ \ ▓▓  | ▓▓      ${RESET}"
-echo -e "${WHITE}        \▓▓      \▓▓\▓▓\▓▓\▓▓ \▓▓▓▓▓▓ \▓▓   \▓▓ \▓▓▓▓▓▓▓\▓▓      \▓▓▓▓▓▓\▓▓   \▓▓      ${RESET}"
-echo -e "${WHITE}                                                                                       ${RESET}
-echo -e "${GREEN}                                                                                       ${RESET}"
 echo -e "${GREEN}                                .-----------------------.                              ${RESET}"
 echo -e "${GREEN}                                | INICIANDO INSTALAÇÃO  |                              ${RESET}"
 echo -e "${GREEN}                                '-----------------------'                              ${RESET}"
-echo -e "${YELLOW}                                                                                      ${RESET}"
 echo -e "${YELLOW}                            Auto Instalador DOCKER/DifyAI V1                          ${RESET}"
-echo -e "${YELLOW}                                                                                      ${RESET}"
-echo -e "${YELLOW}                              https://automilionaria.trade                            ${RESET}"\n"
-
-sleep 1
+echo -e "${YELLOW}                              https://automilionaria.trade                            ${RESET}"
+echo
 
 # ------------------------------------------------------------------------------
 # 1. Garante que git e curl estejam instalados
@@ -63,13 +46,13 @@ while true; do
   echo "=================================================="
   read -p "Digite o domínio WEB (ex: df.automilionaria.trade): " WEB_DOMAIN
   read -p "Digite o domínio API (ex: api-df.automilionaria.trade): " API_DOMAIN
-  
+
   echo
   echo "Você informou:"
   echo " - Domínio WEB: $WEB_DOMAIN"
   echo " - Domínio API: $API_DOMAIN"
   echo
-  
+
   read -p "Está correto? (s/n): " CONFIRMA
   if [[ "$CONFIRMA" == "s" || "$CONFIRMA" == "S" ]]; then
     break
@@ -116,9 +99,6 @@ echo "=================================================="
 echo "Copiando e atualizando o arquivo .env..."
 cd /opt/dify/docker || exit 1
 
-# Caso deseje manter backup do .env antigo, descomente:
-# [ -f .env ] && cp .env "env-bkp-$(date +%Y%m%d-%H%M%S)"
-
 cp .env.example .env
 
 # ------------------------------------------------------------------------------
@@ -126,11 +106,11 @@ cp .env.example .env
 # ------------------------------------------------------------------------------
 echo "=================================================="
 echo "Configurando .env para os domínios informados..."
-sed -i "s|^\(CONSOLE_API_URL=\).*|\1https://$API_DOMAIN|g" .env
-sed -i "s|^\(CONSOLE_WEB_URL=\).*|\1https://$WEB_DOMAIN|g" .env
-sed -i "s|^\(SERVICE_API_URL=\).*|\1https://$API_DOMAIN|g" .env
-sed -i "s|^\(APP_API_URL=\).*|\1https://$API_DOMAIN|g" .env
-sed -i "s|^\(APP_WEB_URL=\).*|\1https://$WEB_DOMAIN|g" .env
+sed -i "s|^CONSOLE_API_URL=.*|CONSOLE_API_URL=https://$API_DOMAIN|g" .env
+sed -i "s|^CONSOLE_WEB_URL=.*|CONSOLE_WEB_URL=https://$WEB_DOMAIN|g" .env
+sed -i "s|^SERVICE_API_URL=.*|SERVICE_API_URL=https://$API_DOMAIN|g" .env
+sed -i "s|^APP_API_URL=.*|APP_API_URL=https://$API_DOMAIN|g" .env
+sed -i "s|^APP_WEB_URL=.*|APP_WEB_URL=https://$WEB_DOMAIN|g" .env
 
 # ------------------------------------------------------------------------------
 # 9. Sobe os containers do Dify.
@@ -145,32 +125,9 @@ docker compose up -d
 echo "=================================================="
 docker ps
 
-#!/bin/bash
-
 # ------------------------------------------------------------------------------
-# Mensagem final com ASCII artístico (sem moldura, azul e alinhado)
+# Mensagem final
 # ------------------------------------------------------------------------------
-
-echo -e "\e[34m  _ _______    _  ______  _       _    _          _  ___   \e[0m"
-echo -e "\e[34m |  ______  \ | ||  ____|\ \    / /    \ \       / // /  | \e[0m"
-echo -e "\e[34m | |       \ \| || |____  \ \  / /      \ \     / //_/ | | \e[0m"
-echo -e "\e[34m | |       / /| ||  ____|  \ \/ /        \ \   / /     | | \e[0m"
-echo -e "\e[34m | |______/ / | || |      ___/ /          \ \ / /      | | \e[0m"
-echo -e "\e[34m |_________/  |_||_|     |____/            \___/       |_| \e[0m"
-echo
-echo -e "\e[34m   _                             _              _          \e[0m"
-echo -e "\e[34m  | |                _          | |            | |         \e[0m"
-echo -e "\e[34m  | | ____    ___  _| |_  _____ | |  _____   __| |  ___    \e[0m"
-echo -e "\e[34m  | ||  _ \  /___)(_   _)(____ || | (____ | / _  | / _ \   \e[0m"
-echo -e "\e[34m  | || | | ||___ |  | |_ / ___ || | / ___ |( (_| || |_| |  \e[0m"
-echo -e "\e[34m  |_||_| |_|(___/    \__)\_____| \_)\_____| \____| \___/   \e[0m"
-echo
-echo -e "\e[37m                 Instalação concluída!                     \e[0m"
-echo -e "\e[37mVocê pode agora acessar o DifyAI em:                       \e[0m"
-echo -e "\e[32mhttps://$WEB_DOMAIN\e[0m"
-echo -e "\e[37mAPI disponível em:                                         \e[0m"
-echo -e "\e[32mhttps://$API_DOMAIN\e[0m"
-echo
-echo -e "\e[34mMétodo MAM:                                                \e[0m"
-echo -e "\e[34mhttps://automilionaria.trade\e[0m"
-
+echo -e "\e[34mInstalação concluída! Acesse o painel em:\e[0m https://$WEB_DOMAIN"
+echo -e "\e[34mAPI do sistema disponível em:\e[0m https://$API_DOMAIN"
+echo -e "\e[32mSistema finalizado com sucesso. Visite: https://automilionaria.trade\e[0m"
