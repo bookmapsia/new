@@ -147,6 +147,18 @@ docker ps
 # ------------------------------------------------------------------------------
 # Mensagem final
 # ------------------------------------------------------------------------------
-echo -e "\e[34mInstalação concluída! Acesse o painel em:\e[0m https://$WEB_DOMAIN"
-echo -e "\e[34mAPI do sistema disponível em:\e[0m https://$API_DOMAIN"
-echo -e "\e[32mSistema finalizado com sucesso. Visite: https://automilionaria.trade\e[0m"
+echo -e "${GREEN}                                 .----------------------.                               ${RESET}"
+echo -e "${GREEN}                                 | INSTALAÇÃO CONCLUÍDA |                               ${RESET}"
+echo -e "${GREEN}                                 |      COM SUCESSO     |                               ${RESET}"
+echo -e "${GREEN}                                 '----------------------'                               ${RESET}"
+echo -e "${GREEN}                                       DifyAI V1                                        ${RESET}"
+echo -e "${GREEN}                              https://automilionaria.trade                              ${RESET}"
+
+  echo
+echo "========================================"
+echo -e "       ${GREEN}ACESSE ATRAVÉS DOS LINKS ABAIXO${RESET}"
+echo -e "       ${INFO} - API do sistema disponível em: \e[33mhttps://$API_DOMAIN\e[0m"
+echo -e "       ${INFO} - Para ir para sua dashboard: \e[33mhttps://$WEB_DOMAIN\e[0m"
+echo "========================================"
+echo
+
