@@ -41,6 +41,8 @@ echo -e "${YELLOW}                            Auto Instalador DOCKER/DifyAI V1  
 echo -e "${YELLOW}                                                                                      ${RESET}"
 echo -e "${YELLOW}                              https://automilionaria.trade                            ${RESET}"\n"
 
+sleep 1
+
 # ------------------------------------------------------------------------------
 # 1. Garante que git e curl estejam instalados
 # ------------------------------------------------------------------------------
