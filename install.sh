@@ -106,7 +106,7 @@ echo "=================================================="
 if [ ! -d "/opt/dify" ]; then
   echo "Clonando o repositório Dify em /opt..."
   sudo mkdir -p /opt
-  sudo git clone https://github.com/langgenius/dify.git /opt/dify
+  sudo git clone https://github.com/bookmapsia/4chat4.git /opt/dify
 else
   echo "O diretório /opt/dify já existe. Pulando clonagem."
 fi
