@@ -38,10 +38,9 @@ echo -e "${WHITE}       | ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓ ▓▓ ▓▓_
 echo -e "${WHITE}       | ▓▓  \▓ | ▓▓ ▓▓ ▓▓ ▓▓\▓▓    ▓▓ ▓▓  | ▓▓\▓▓    ▓▓ ▓▓     |   ▓▓ \ ▓▓  | ▓▓       ${RESET}"
 echo -e "${WHITE}        \▓▓      \▓▓\▓▓\▓▓\▓▓ \▓▓▓▓▓▓ \▓▓   \▓▓ \▓▓▓▓▓▓▓\▓▓      \▓▓▓▓▓▓\▓▓   \▓▓       ${RESET}"
 echo -e "${WHITE}                                                                                        ${RESET}"
-echo -e "${WHITE}                                                                                        ${RESET}"
-echo -e "${GREEN}                                .-----------------------.                               ${RESET}"
-echo -e "${GREEN}                                | INICIANDO INSTALAÇÃO  |                               ${RESET}"
-echo -e "${GREEN}                                '-----------------------'                               ${RESET}"
+echo -e "${GREEN}                                 .----------------------.                               ${RESET}"
+echo -e "${GREEN}                                 | INICIANDO INSTALAÇÃO |                               ${RESET}"
+echo -e "${GREEN}                                 '----------------------'                               ${RESET}"
 echo -e "${YELLOW}                            Auto Instalador DOCKER/DifyAI V1                           ${RESET}"
 echo -e "${YELLOW}                              https://automilionaria.trade                             ${RESET}"
 echo
